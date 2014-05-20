@@ -42,6 +42,9 @@
 
     {% javascript vendor/modernizr-2.6.2-respond-1.1.0.min %}
 <!--    <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
+    {% if page.url == "/index.html" %}
+      {% javascript vendor/language_detection_and_redirect.js %}
+    {% endif %}
 
     <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
   </head>
